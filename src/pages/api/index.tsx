@@ -23,7 +23,12 @@ export default async function handler(
 
   try {
     const response = await axios.get(requestedURL);
-    res.status(200).send({ statusCode: response.status, message: 'Good Job!' });
+    if (response.status == 200) {
+      res.status(200).send({ message: 'Good Job!' });
+    } else {
+      res.status(400).json({ message: 'error sending request' });
+    }
+
   } catch (error) {
     res.status(400).json({ message: 'error sending request' });
   }
