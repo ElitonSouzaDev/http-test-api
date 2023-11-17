@@ -63,8 +63,8 @@ export default function Home() {
           </div>
           <h3 className="pt-4 text-xl pb-4">Our Response</h3>
           <div className="flex gap-4 flex-wrap">
-            <textarea defaultValue={JSON.stringify(responseExampleOK, undefined, 2)} className="bg-gray-800 p-4 rounded-md w-full font-medium min-h-[130px] max-h-[130px] border-green-500 border-2" readOnly disabled/>
-            <textarea defaultValue={JSON.stringify(responseExampleBad, undefined, 2)} className="bg-gray-800 p-4 rounded-md w-full font-medium min-h-[130px] max-h-[130px] border-red-500 border-2" readOnly disabled />
+            <textarea defaultValue={JSON.stringify(responseExampleOK, undefined, 2)} className="overflow-hidden bg-gray-800 p-4 rounded-md w-full font-medium min-h-[130px] max-h-[130px] border-green-500 border-2" readOnly disabled />
+            <textarea defaultValue={JSON.stringify(responseExampleBad, undefined, 2)} className="overflow-hidden bg-gray-800 p-4 rounded-md w-full font-medium min-h-[130px] max-h-[130px] border-red-500 border-2" readOnly disabled />
           </div>
         </div>
       </main>

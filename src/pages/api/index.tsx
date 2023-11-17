@@ -28,7 +28,6 @@ export default async function handler(
     } else {
       res.status(400).json({ message: 'error sending request' });
     }
-
   } catch (error) {
     res.status(400).json({ message: 'error sending request' });
   }
